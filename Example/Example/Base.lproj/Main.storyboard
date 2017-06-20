@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select dates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-9d-gmp">
+                                <rect key="frame" x="75" y="70" width="225" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7xe-9d-gmp" secondAttribute="height" multiplier="225:47" id="3Gb-Pi-3jz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-dw-iTh">
+                                <rect key="frame" x="75" y="150" width="225" height="64"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.42745098039215684" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A1U-dw-iTh" secondAttribute="height" multiplier="225:64" id="yfL-dx-eqw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wakePickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exN-9t-eSZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0fH-I3-Uwv"/>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="5D2-Hb-A00"/>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="trailing" secondItem="A1U-dw-iTh" secondAttribute="trailing" id="8GG-QF-s0v"/>
+                            <constraint firstItem="A1U-dw-iTh" firstAttribute="width" secondItem="A1U-dw-iTh" secondAttribute="height" multiplier="225:64" id="QB7-68-cKc"/>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="leading" secondItem="A1U-dw-iTh" secondAttribute="leading" id="S2R-K4-25u"/>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="width" secondItem="7xe-9d-gmp" secondAttribute="height" multiplier="225:47" id="fbq-e2-rd0"/>
+                            <constraint firstItem="A1U-dw-iTh" firstAttribute="top" secondItem="7xe-9d-gmp" secondAttribute="bottom" constant="33" id="gvc-Gu-kco"/>
+                            <constraint firstItem="7xe-9d-gmp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="ycR-Zv-215"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="7xe-9d-gmp" id="VXg-0k-Lch"/>
+                        <outlet property="wakePickerButton" destination="A1U-dw-iTh" id="Ib4-pR-LMN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
