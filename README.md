@@ -1,4 +1,8 @@
 # YHDateRangePicker
+[![Platform](https://img.shields.io/cocoapods/p/EPCalendarPicker.svg?style=flat)](http://cocoapods.org/pods/EPContactsPicker)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![License](https://img.shields.io/cocoapods/l/Ouroboros.svg?style=flat)](https://github.com/yuhsuan19/YHDateRangePicker/blob/master/LICENSE)
+
 ![YHDateRangePicekr](https://github.com/yuhsuan19/YHDateRangePicker/blob/master/Demo/demo.gif)
 
 ## Initialization
@@ -9,7 +13,7 @@ let dateRangePicker = YHDateRangePicker()
 
 * Init dateRangePicker with customized colors:
 ```swift
-let dateRangePicler = YHDateRangePicker(mainColor: yourColor1, subColor: yourColor2)
+let dateRangePicker = YHDateRangePicker(mainColor: yourColor1, subColor: yourColor2)
 ```
 
 ## Delegate
